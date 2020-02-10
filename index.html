@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Witaj!</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Cambay&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="logoweb.svg">
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script>
+        ScrollReveal({ reset: true });
+    </script>
+	<script src="https://kit.fontawesome.com/98db711917.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+
+<body style="margin: 0;padding: 0">
+
+    <ul>
+        <!--<a href="#home"><img id="logoimg" src="logowhite.svg" style="width:200px;height:45px; float: left; padding: 5px;"></a>-->
+        <li><a href="index.html">Start</a></li>
+        <li><a href="nowosci.html">Nowości</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="onas.html">O nas</a></li>
+    </ul>
+
+    <p id = "maintext">Poznaj nasze produkty</p>
+	
+	<div id="section" style="font-size: 4vw; height:150px">
+		<a href="#section" style="color: #a8b4ba"><i class="fa fa-angle-down" style="position:absolute; left: 49%; down:0;"></i></a>
+	</div>
+	
+	<div class = "wide1" id = "section1">
+
+<script>
+		ScrollReveal().reveal('.wide1');
+</script>
+
+    <div class = "infoimage">
+        <img id="prodimg" src="image.jpg">
+        <div id="stuff"><a href="przygody.html">Więcej informacji</a> </div>
+    </div>
+    <container id = "content"> 
+        <div id = "text">
+            Przygody Janusza Korwin-Mikkego
+        </div>
+        <p id = "infotext"> Wciel się w legendarnego polityka i pokonuj przeszkody <br>  aby zająć upragnione miejsce w ploskim parlamencie! </p>
+    </container>
+</div>
+
+	<div class = "wide1" id = "section2" style="margin-top: 83px">
+
+	<script>
+		ScrollReveal().reveal('.wide1');
+	</script>
+    <div class = "infoimage">
+        <img id="prodimg" src="conceptart.png" style="width:100%">
+        <div id="stuff"><a href="collisium.html">Więcej informacji</a></div>
+    </div>
+    <container id = "content"> 
+        <div id = "text">
+            Collisium
+        </div>
+        <p id = "infotext"> W niezwykłej krainie daleko stąd zbliża się kollizjum, które<br> zagraża całemu istnieniu! Zrób wszystko aby do niego nie dopuścić </p>
+    </container>
+</div>
+
+</body>
+
+</html>
